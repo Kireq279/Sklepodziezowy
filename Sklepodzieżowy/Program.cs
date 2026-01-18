@@ -139,14 +139,14 @@ namespace SklepOdziezowy
                         break;
 
                     case "3":
-                        // EDYCJA - POPRAWIONE WYWOŁANIE (4 ARGUMENTY)
+                        // EDYCJA
                         Console.Write("Podaj ID produktu do edycji: ");
                         if (int.TryParse(Console.ReadLine(), out int editId))
                         {
                             Console.Write("Nowa nazwa: ");
                             string newName = Console.ReadLine();
 
-                            Console.Write("Nowy rozmiar: "); // DODANO prośbę o rozmiar
+                            Console.Write("Nowy rozmiar: "); 
                             string newSize = Console.ReadLine();
 
                             Console.Write("Nowa cena: ");
@@ -166,7 +166,7 @@ namespace SklepOdziezowy
                         break;
 
                     case "4":
-                        // USUWANIE - DODANO WALIDACJĘ (TryParse)
+                        // USUWANIE 
                         Console.Write("Podaj ID do usunięcia: ");
                         if (int.TryParse(Console.ReadLine(), out int id))
                         {
